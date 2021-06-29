@@ -43,12 +43,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IPrinter.cs" />
+    <Compile Include="Printer.cs" />
     <Compile Include="PrintManager.cs" />
     <Compile Include="PrintScanner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScanManager.cs" />
     <Compile Include="IScanner.cs" />
+    <Compile Include="Scanner.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

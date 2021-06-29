@@ -16,12 +16,31 @@ namespace PrintScannerProgram
             this._printer = printer;
             this._scanner = scanner;
         }
-
         public void PrintScan()
         {
             _printer.Print();
             _scanner.Scan();
         }
+
+
+ /*       public PrintScanner(IPrinter printer)
+        {
+            this._printer = printer;
+        }
+        public void PrintOnly()
+        {
+            _printer.Print();
+        }
+
+        public PrintScanner(IScanner scanner)
+        {
+            this._scanner = scanner;
+        }
+        public void ScanOnly()
+        {
+            _scanner.Scan();
+        }
+*/
 
     }
 }

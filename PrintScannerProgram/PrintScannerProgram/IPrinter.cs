@@ -9,5 +9,6 @@ namespace PrintScannerProgram
     public interface IPrinter
     {
         void Print();
+       
     }
 }
