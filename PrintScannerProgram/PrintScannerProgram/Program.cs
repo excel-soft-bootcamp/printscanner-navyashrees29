@@ -12,22 +12,23 @@ namespace PrintScannerProgram
         {
             Printer printer = new Printer();
             Scanner scanner = new Scanner();
+            NanoLaserPrinter nanoLaserPrinter = new NanoLaserPrinter();
 
             PrintManager printManager = new PrintManager();
-            printManager.PrintDocument();
+            printManager.PrintDocument(printer);
 
             ScanManager scanManager = new ScanManager();
-            scanManager.ScanDocument();
-        
-            PrintScanner printScan = new PrintScanner(printManager, scanManager);
-            printScan.PrintScan();
+            scanManager.ScanDocument(scanner);
 
-        /*    PrintScanner print = new PrintScanner(printManager);
-            print.PrintOnly();
+            PrintScanner printScan = new PrintScanner();
+            printScan.SetPrinter(printer);
+     //       printScan.SetPrinter(nanoLaserPrinter);
+            printScan.SetScanner(scanner);
 
-            PrintScanner scan = new PrintScanner(scanManager);
-            print.ScanOnly();
-        */
+            printManager.PrintDocument(printScan);
+            scanManager.ScanDocument(printScan);
+
+
         }
     }
 }

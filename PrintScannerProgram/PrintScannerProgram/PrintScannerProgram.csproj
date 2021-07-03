@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IPrinter.cs" />
+    <Compile Include="NanoLaserPrinter.cs" />
     <Compile Include="Printer.cs" />
     <Compile Include="PrintManager.cs" />
     <Compile Include="PrintScanner.cs" />
